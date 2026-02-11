@@ -2,7 +2,6 @@ import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef, useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Projects() {
   const ref = useRef(null);
@@ -80,14 +79,14 @@ export function Projects() {
                     }}
                     transition={{ duration: 0.5 }}
                   >
-                    <ImageWithFallback
+                    <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-48 object-cover"
                     />
                   </motion.div>
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60" />
-                  
+
                   <motion.div
                     className="absolute inset-0 bg-blue-600/90 flex items-center justify-center gap-4"
                     initial={{ opacity: 0 }}
