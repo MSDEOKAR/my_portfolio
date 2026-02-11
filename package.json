@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist -r https://github.com/MSDEOKAR/my_portfolio.git"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
