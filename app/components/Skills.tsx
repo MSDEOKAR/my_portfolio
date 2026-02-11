@@ -53,11 +53,11 @@ export function Skills() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-white mb-4">Skills & Expertise</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto" />
         </motion.div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.category}

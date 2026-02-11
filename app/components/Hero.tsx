@@ -45,7 +45,7 @@ export function Hero() {
               transition={{ duration: 0.8 }}
             >
               <motion.h1
-                className="text-6xl md:text-8xl font-bold text-white mb-6"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-6"
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
@@ -64,7 +64,7 @@ export function Hero() {
             </motion.div>
 
             <motion.p
-              className="text-2xl md:text-3xl text-gray-300 mb-8"
+              className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-6 sm:mb-8"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -73,7 +73,7 @@ export function Hero() {
             </motion.p>
 
             <motion.p
-              className="text-lg text-gray-400 mb-12 max-w-xl"
+              className="text-base sm:text-lg text-gray-400 mb-8 sm:mb-12 max-w-xl"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -84,20 +84,20 @@ export function Hero() {
             </motion.p>
 
             <motion.div
-              className="flex flex-wrap gap-4 mb-12"
+              className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-12"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <motion.button
-                className="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold flex items-center gap-2"
+                className="px-6 py-3 sm:px-8 sm:py-4 bg-blue-600 text-white rounded-lg font-semibold flex items-center justify-center gap-2 w-full sm:w-auto"
                 whileHover={{ scale: 1.05, backgroundColor: "#2563eb" }}
                 whileTap={{ scale: 0.95 }}
               >
                 View My Work
               </motion.button>
               <motion.button
-                className="px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-lg font-semibold flex items-center gap-2"
+                className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-blue-500 text-blue-400 rounded-lg font-semibold flex items-center justify-center gap-2 w-full sm:w-auto"
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(59, 130, 246, 0.1)" }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -107,7 +107,7 @@ export function Hero() {
             </motion.div>
 
             <motion.div
-              className="flex gap-6"
+              className="flex gap-4 sm:gap-6 justify-center sm:justify-start"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -122,23 +122,23 @@ export function Hero() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white"
                   whileHover={{ scale: 1.2, backgroundColor: "rgba(255, 255, 255, 0.2)" }}
                   whileTap={{ scale: 0.9 }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.8 + index * 0.1 }}
                 >
-                  <Icon size={24} />
+                  <Icon size={20} />
                 </motion.a>
               ))}
             </motion.div>
           </div>
 
           {/* Right Column: Profile Picture with premium square styling */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
             <motion.div
-              className="relative w-64 h-64 md:w-80 md:h-80"
+              className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80"
               initial={{ opacity: 0, scale: 0.8, rotate: 5 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
               transition={{ duration: 1, delay: 0.2 }}

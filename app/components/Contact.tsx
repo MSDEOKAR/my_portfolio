@@ -67,21 +67,21 @@ export function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-white mb-4">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Get In Touch</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-4" />
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? I'd love to hear from you!
           </p>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold text-white mb-8">Let's talk about your project</h3>
-            <div className="space-y-6 mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8">Let's talk about your project</h3>
+            <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
               {contactInfo.map((info, index) => (
                 <motion.a
                   key={info.label}
@@ -104,7 +104,7 @@ export function Contact() {
             </div>
 
             <motion.div
-              className="bg-slate-900 rounded-2xl p-8 border border-slate-800"
+              className="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6 }}
@@ -134,7 +134,7 @@ export function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
                 <label className="block text-gray-300 mb-2">Name</label>
                 <motion.input
